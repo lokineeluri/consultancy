@@ -2,7 +2,7 @@ import Servicecard from "./Servicecards";
 import Service_sidebar from "./Service_sidebar";
 import { useState } from "react";
 import svc from "../assets/services.mp4";
-import backupbg from "../assets/backup-bg.png";
+import backupbg from "../assets/svc_bg.png";
 
 const data = [
   {
