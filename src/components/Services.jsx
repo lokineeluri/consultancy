@@ -47,26 +47,25 @@ function Services() {
       >
         <source src={svc} type="video/mp4" />
       </video>
-      <div className="Service-left">
-        <h1>Core Services</h1>
 
-        <div className="names">
-          {data.map((item, index) => (
-            <div onClick={() => event(item)}>
-              <Service_sidebar
-                key={index}
-                title={item.title}
-                isSelected={card.title == item.title}
-              />
-            </div>
-          ))}
+      <div className="Service-left">
+        <h1 className="hh1">Core Services</h1>
+        <div className="service-cards">
+          <div>
+            <Servicecard title={card.title} description={card.description} />
+          </div>
         </div>
       </div>
-
-      <div className="service-cards">
-        <div>
-          <Servicecard title={card.title} description={card.description} />
-        </div>
+      <div className="names">
+        {data.map((item, index) => (
+          <div onClick={() => event(item)}>
+            <Service_sidebar
+              key={index}
+              title={item.title}
+              isSelected={card.title == item.title}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
