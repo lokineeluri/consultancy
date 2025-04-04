@@ -64,8 +64,7 @@ header {
 
 .hero {
   width: 100%;
-  height: fit-content;
-  min-width: 350px;
+
   position: relative;
   overflow: hidden;
   margin-top: -40px; /* Add this to offset the header height */
@@ -828,9 +827,7 @@ ul {
   .nav-bar {
     border-radius: 30px;
   }
-  .hero {
-    height: 90vh;
-  }
+
   .hero-component {
     width: 100%;
 
