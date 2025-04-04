@@ -10,12 +10,21 @@ function Careers() {
   return (
     <div className="app">
       <h1 className="crr">Career Opportunities</h1>
+      <div className="careers">
+        <div className="filter">
+          <h1>filters</h1>
+        </div>
+        <main className="jobs-container">
+          {jobsData.map((job) => (
+            <JobCard
+              key={job.id}
+              job={job}
+              onClick={() => setSelectedJob(job)}
+            />
+          ))}
+        </main>
+      </div>
 
-      <main className="jobs-container">
-        {jobsData.map((job) => (
-          <JobCard key={job.id} job={job} onClick={() => setSelectedJob(job)} />
-        ))}
-      </main>
       {selectedJob && (
         <JobModal job={selectedJob} onClose={() => setSelectedJob(null)} />
       )}
