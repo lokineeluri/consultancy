@@ -31,7 +31,7 @@ function Footer() {
               <ul>
                 <li>
                   <a
-                    href="https://www.linkedin.com/in/your-profile/"
+                    href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -40,7 +40,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://twitter.com/your-profile/"
+                    href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -49,7 +49,7 @@ function Footer() {
                 </li>
                 <li>
                   <a
-                    href="https://github.com/your-profile/"
+                    href="https://github.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
