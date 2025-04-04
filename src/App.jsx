@@ -1,40 +1,27 @@
 import Nav from "./components/Nav";
-import Hero from "./components/Hero";
 import Footer from "./components/footer";
-import Service from "./components/Services";
-import Scroll from "./components/Scroll";
-import Choose from "./components/Choose";
+import Homepage from "./components/homepage/Homepage";
+import About from "./components/about/About";
+import Contact from "./components/contact";
+import Careers from "./components/careers/Careers";
+import "./components/homepage/homepage.css";
+import { ToastContainer } from "react-toastify";
 
-import hero from "./assets/hero.mp4";
-import backupbg from "./assets/backup-bg.png";
-
-import "./components/homepage.css";
-
+import { Route, Routes } from "react-router-dom";
+import JobToast from "./components/JobToast"; // Import as a component
 function App() {
   return (
     <>
+      <ToastContainer />
+      <JobToast /> {/* Use JobToast as a component */}
       <Nav />
-      <div className="hero">
-        <video
-          className="hero-bg"
-          autoPlay
-          muted
-          playsInline
-          loading="lazy"
-          poster={backupbg}
-        >
-          <source src={hero} type="video/mp4" />
-        </video>
+      <Routes>
+        <Route path="/" element={<Homepage />}></Route>
 
-        <Hero />
-      </div>
-      <div className="sub-hero">
-        <Scroll></Scroll>
-        <Service></Service>
-        <Choose></Choose>
-        <div className="box"></div>
-      </div>
-
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/careers" element={<Careers />}></Route>
+      </Routes>
+      <Contact></Contact>
       <Footer></Footer>
     </>
   );

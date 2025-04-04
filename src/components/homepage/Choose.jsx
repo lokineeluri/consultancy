@@ -1,6 +1,6 @@
-import shield from "../assets/shield.png";
-import growth from "../assets/growth.png";
-import group from "../assets/group.png";
+import shield from "../../assets/shield.png";
+import growth from "../../assets/growth.png";
+import group from "../../assets/group.png";
 
 const Elems = [
   {

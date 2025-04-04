@@ -1,0 +1,256 @@
+.app {
+  min-height: calc(100vh - 115px); /* Adjust based on your navbar height */
+  padding-top: 115px; /* Add padding to account for navbar */
+  background: linear-gradient(to bottom, #a8a8a8, #998888, #272626);
+  min-width: 400px;
+}
+.crr {
+  font-family: "Joan", serif;
+  font-weight: 600;
+
+  text-align: center;
+}
+.jobs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+  grid-template-rows: auto; /* Auto-sized rows */
+  gap: 20px; /* Space between grid items */
+  padding: 50px;
+  place-items: center;
+}
+.job-card {
+  background-color: #dbdbdb;
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  min-width: 400px;
+  width: 90%;
+  height: 200px;
+}
+
+@media (max-width: 1050px) {
+  .jobs-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .jobs-container {
+    padding: 50px;
+  }
+  .job-card {
+    min-width: 200px;
+  }
+}
+.job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.time-posted {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 12px;
+  color: #666;
+}
+
+.job-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1f1f1f;
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #333;
+  min-width: 150px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.modal-title {
+  font-size: 24px;
+  color: #1f1f1f;
+  margin-bottom: 0.5rem;
+}
+
+.modal-company {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.modal-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #333;
+  min-width: 150px;
+}
+
+.skills-section,
+.description-section,
+.eligibility-section {
+  margin-bottom: 2rem;
+}
+
+.skills-section h4,
+.description-section h4,
+.eligibility-section h4 {
+  font-size: 18px;
+  color: #1f1f1f;
+  margin-bottom: 1rem;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.eligibility-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.eligibility-section li {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.apply-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.75rem 2rem;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.apply-button:hover {
+  background-color: #333;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+}
+
+/* Shared icon styles */
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+/* Custom icons using pseudo-elements */
+.icon-briefcase::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='7' width='20' height='14' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center center;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='7' width='20' height='14' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center center;
+}
+
+.icon-wallet::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='20' height='12' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M22 10h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h4'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center center;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='2' y='6' width='20' height='12' rx='2' ry='2'%3E%3C/rect%3E%3Cpath d='M22 10h-4a2 2 0 0 0-2 2v0a2 2 0 0 0 2 2h4'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat center center;
+}
+
+.icon-location::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #000;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z'%3E%3C/path%3E%3Ccircle cx='12' cy='9' r='2.5'%3E%3C/circle%3E%3C/svg%3E")
+    no-repeat center center;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z'%3E%3C/path%3E%3Ccircle cx='12' cy='9' r='2.5'%3E%3C/circle%3E%3C/svg%3E")
+    no-repeat center center;
+}

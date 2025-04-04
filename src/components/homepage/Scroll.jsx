@@ -8,9 +8,7 @@ const industries = [
   "Cybersecurity",
   "Finance",
   "Information Technology",
-
   "Retail",
-
   "Oil & Gas",
   "Payrole Services",
 ];
@@ -54,7 +52,6 @@ function Scroll() {
           the global economy
         </p>
       </div>
-
       <div className="scroll-wrapper">
         <div ref={scrollRef} className="scroll-flex">
           {renderIndustries(firstScrollRef)}

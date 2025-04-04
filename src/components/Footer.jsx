@@ -1,4 +1,5 @@
-import "./homepage.css";
+import "./homepage/homepage.css";
+import { Linkedin, Twitter, Github } from "lucide-react";
 function Footer() {
   return (
     <footer>
@@ -26,10 +27,36 @@ function Footer() {
           </div>
           <div className="socials">
             <h1>connect with us</h1>
-            <div>
-              <img src="" alt="" srcset="" />
-              <img src="" alt="" srcset="" />
-              <img src="" alt="" srcset="" />
+            <div className="icons">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/your-profile/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Linkedin className="iconss" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://twitter.com/your-profile/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Twitter className="iconss" />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/your-profile/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="iconss" />
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
