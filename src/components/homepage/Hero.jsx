@@ -29,11 +29,15 @@ function Hero() {
         </h2>
         <p>Let us help you break boundaries</p>
         <h2>Become a consultant</h2>
-        <p>
+        <p className="pp">
           If you have entry-level base knowledge, and you're seeking to get a
           “leg up” into the technical industry to expand your career and
           learning into one of the technologies listed below, apply to one of
           these to become a part of our consultant program!
+        </p>
+        <p className="ppp">
+          If you have entry-level base knowledge, and you're seeking to get a
+          “leg up”
         </p>
       </div>
     </div>

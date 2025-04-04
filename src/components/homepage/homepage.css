@@ -112,6 +112,9 @@ h2 {
   font-weight: 590;
   font-style: normal;
 }
+.hero-component .ppp {
+  display: none;
+}
 .mmain {
   font-family: "Joan", serif;
   font-weight: 590;
@@ -794,7 +797,8 @@ ul {
 @media (max-width: 700px) {
   .hero-component {
     width: 90%;
-    padding: 5%;
+    padding: 20% 5%;
+
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 25px;
@@ -805,6 +809,12 @@ ul {
   }
   .hero-component p {
     font-size: 25px;
+  }
+  .hero-component .pp {
+    display: none;
+  }
+  .hero-component .ppp {
+    display: block;
   }
 
   .servicecard h1 {
