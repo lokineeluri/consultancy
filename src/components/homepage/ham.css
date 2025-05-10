@@ -4,13 +4,6 @@
   transition: width 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 768px) {
-  .nav-bar {
-    width: 75%;
-    background-color: rgba(252, 255, 255, 0);
-  }
-}
-
 /* Hamburger Menu - Mobile Only */
 .hamburger {
   display: none;
@@ -44,7 +37,7 @@
 }
 
 /* Show Hamburger on Mobile */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
   .hamburger {
     display: flex;
   }
@@ -84,5 +77,8 @@
     text-decoration: none;
     color: black;
     font-size: 18px;
+  }
+  .nav-bar {
+    background: none;
   }
 }

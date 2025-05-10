@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./homepage/homepage.css";
+import logo from "../assets/logo.png";
 
 function Nav() {
   const location = useLocation();
@@ -38,7 +39,7 @@ function Nav() {
 
       if (!isMobile) {
         gsap.to(navBar, {
-          width: "55%",
+          width: "65%",
           scrollTrigger: {
             trigger: navBar,
             start: "top top",
@@ -159,7 +160,10 @@ function Nav() {
   return (
     <header>
       <div className="nav-bar">
-        <div id="logo"></div>
+        <div id="logo">
+          <img src={logo} alt="logo" className="logo" />
+          <h1 className="tittle">Stratosys</h1>
+        </div>
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
           <div className={`bar ${menuOpen ? "open" : ""}`}></div>
           <div className={`bar ${menuOpen ? "open" : ""}`}></div>

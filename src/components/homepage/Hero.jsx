@@ -37,7 +37,8 @@ function Hero() {
         </p>
         <p className="ppp">
           If you have entry-level base knowledge, and you're seeking to get a
-          “leg up”
+          “leg up” nto the technical industry to expand your career and learning
+          into one of the technologies
         </p>
       </div>
     </div>

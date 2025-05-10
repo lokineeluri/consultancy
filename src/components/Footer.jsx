@@ -1,11 +1,13 @@
 import "./homepage/homepage.css";
 import { Linkedin, Twitter, Github } from "lucide-react";
+import logo from "../assets/logo.png";
 function Footer() {
   return (
     <footer>
       <div className="foot">
-        <div className="logo">
-          <h1>CONSULTANCY SERVICE</h1>
+        <div id="logo">
+          <img src={logo} alt="logo" className="logo" />
+          <h1 className="tittle">Stratosys</h1>
         </div>
         <div className="footer-elems">
           <div className="quicklinks">

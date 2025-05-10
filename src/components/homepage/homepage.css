@@ -13,8 +13,9 @@ header {
 .nav-bar {
   width: 95%; /* Initial width */
   max-width: 100%;
-  height: 78px;
-  background-color: rgba(252, 255, 255, 0.87);
+  height: 85px;
+  padding-left: 20px;
+  background: linear-gradient(to right, #000000, #969696e0);
   margin: 17px 0 20px 0;
   padding-right: 30px;
   display: flex;
@@ -25,10 +26,6 @@ header {
   transition: width 0.3s ease-in-out;
 }
 
-#logo {
-  width: 100px;
-  height: 100px;
-}
 #nav-elements ul {
   display: flex;
   flex-direction: row;
@@ -97,6 +94,7 @@ header {
   text-align: center;
   border-radius: 47px;
 }
+
 .hero-component h3,
 h2 {
   z-index: 2;
@@ -112,6 +110,9 @@ h2 {
   font-family: "Joan", serif;
   font-weight: 590;
   font-style: normal;
+}
+.ppp {
+  display: none;
 }
 .mmain {
   font-family: "Joan", serif;
@@ -814,6 +815,12 @@ ul {
   }
   .hero-component p {
     font-size: 25px;
+  }
+  .pp {
+    display: none;
+  }
+  .ppp {
+    display: block;
   }
 
   .servicecard h1 {
