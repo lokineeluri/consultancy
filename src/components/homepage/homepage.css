@@ -61,6 +61,7 @@ header {
 
 .hero {
   width: 100%;
+  height: 900px;
 
   min-width: 350px;
   position: relative;
@@ -139,6 +140,10 @@ h2 {
   position: absolute;
   top: 0;
   left: 0;
+}
+#sercices {
+  width: 100%;
+  height: 900px;
 }
 
 .service {
@@ -731,7 +736,7 @@ ul {
 
   .service {
     flex-direction: column;
-    padding: 50px 0;
+    padding: 80px 0;
     justify-content: center;
   }
   .names {
