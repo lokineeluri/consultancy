@@ -64,8 +64,8 @@ header {
 
 .hero {
   width: 100%;
+  height: fit-content;
   min-width: 350px;
-
   position: relative;
   overflow: hidden;
   margin-top: -40px; /* Add this to offset the header height */
@@ -84,13 +84,14 @@ header {
   align-items: center;
   justify-content: center;
 
+  min-height: calc(100vh - 115px); /* Adjust based on your navbar height */
   padding-top: 115px; /* Add padding to account for navbar */
 }
 .hero-component {
   margin-top: 50px;
   width: 80%;
   max-width: 800px;
-
+  height: auto;
   padding: 5%;
   background-color: rgba(232, 234, 234, 0.78);
   text-align: center;
@@ -111,9 +112,6 @@ h2 {
   font-family: "Joan", serif;
   font-weight: 590;
   font-style: normal;
-}
-.hero-component .ppp {
-  display: none;
 }
 .mmain {
   font-family: "Joan", serif;
@@ -699,7 +697,9 @@ ul {
     flex-direction: column;
     width: 50%;
   }
-
+  .service {
+    min-height: 90vh;
+  }
   .svrc {
     gap: 0;
   }
@@ -713,7 +713,9 @@ ul {
     max-width: none;
     width: 80%;
   }
-
+  .service {
+    height: 120vh;
+  }
   .itemss {
     width: 70%;
   }
@@ -774,6 +776,7 @@ ul {
 @media (max-width: 1000px) {
   .hero-component {
     width: 600px;
+    height: 560px;
   }
 
   footer {
@@ -795,13 +798,15 @@ ul {
 }
 
 @media (max-width: 700px) {
+  .hero {
+    height: 95vh;
+  }
   .hero-component {
     width: 90%;
-    padding: 20% 5%;
-
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 5%;
+    height: 560px;
     border-radius: 25px;
+    margin: 5px;
   }
   .hero-component h3,
   h2 {
@@ -809,12 +814,6 @@ ul {
   }
   .hero-component p {
     font-size: 25px;
-  }
-  .hero-component .pp {
-    display: none;
-  }
-  .hero-component .ppp {
-    display: block;
   }
 
   .servicecard h1 {
@@ -836,10 +835,12 @@ ul {
   .nav-bar {
     border-radius: 30px;
   }
-
+  .hero {
+    height: 90vh;
+  }
   .hero-component {
     width: 100%;
-
+    height: 520px;
     padding: 50px 30px;
   }
   .hero-component h3,
@@ -896,7 +897,9 @@ ul {
   .hero-component p {
     font-size: 22px;
   }
-
+  .service {
+    height: 100vh;
+  }
   .Service-left {
     width: 100%;
   }
@@ -921,6 +924,7 @@ ul {
     width: 150px;
   }
   .hero-component {
+    height: 530px;
     padding: 50px 30px;
   }
   .hero-component h3,
@@ -933,7 +937,7 @@ ul {
 }
 
 @media (max-width: 400px) {
-  .hero {
-    padding-bottom: 50px;
+  .hero-component {
+    height: 560px;
   }
 }

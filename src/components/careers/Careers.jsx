@@ -11,9 +11,6 @@ function Careers() {
     <div className="app">
       <h1 className="crr">Career Opportunities</h1>
       <div className="careers">
-        <div className="filter">
-          <h1>filters</h1>
-        </div>
         <main className="jobs-container">
           {jobsData.map((job) => (
             <JobCard
