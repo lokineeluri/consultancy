@@ -67,7 +67,7 @@ header {
   overflow: hidden;
   margin-top: -40px;
 
-  max-height: 60vh; /* Use min-height instead of height */
+  max-height: 1000px; /* Use min-height instead of height */
 
   display: flex;
   align-items: center;
@@ -144,7 +144,7 @@ h2 {
 /* Services */
 .svcbg {
   width: 100%;
-
+  height: 1000px;
   object-fit: cover;
   position: absolute;
   top: 0;
