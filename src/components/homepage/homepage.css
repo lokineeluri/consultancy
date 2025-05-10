@@ -67,7 +67,7 @@ header {
   overflow: hidden;
   margin-top: -40px;
 
-  max-height: 110vh; /* Use min-height instead of height */
+  max-height: 60vh; /* Use min-height instead of height */
 
   display: flex;
   align-items: center;
