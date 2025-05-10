@@ -61,12 +61,12 @@ header {
 
 .hero {
   width: 100%;
-  min-width: 350px;
+
   position: relative;
   overflow: hidden;
   margin-top: -40px;
 
-  min-height: 100vh; /* Use min-height instead of height */
+  min-height: 110vh; /* Use min-height instead of height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,8 +90,9 @@ header {
 .hero-component {
   margin-top: 50px;
   width: 80%;
-  max-width: 800px;
-  height: auto;
+  max-width: 900px;
+  max-height: 600px;
+
   padding: 5%;
   background-color: rgba(232, 234, 234, 0.78);
   text-align: center;
@@ -103,7 +104,7 @@ header {
 .hero-component h3,
 h2 {
   color: black;
-  font-size: 40px;
+  font-size: 35px;
   font-family: "Julius Sans One", serif;
   font-weight: 590;
   font-style: normal;
@@ -111,7 +112,7 @@ h2 {
 
 .hero-component p {
   color: black;
-  font-size: 25px;
+  font-size: 22px;
   font-family: "Joan", serif;
   font-weight: 590;
   font-style: normal;
@@ -135,7 +136,7 @@ h2 {
   height: 100%;
   object-fit: cover; /* Changed from contain to cover */
   z-index: 0;
-  max-height: 100vh; /* Ensure video doesn't exceed viewport height */
+  max-height: 1000px; /* Ensure video doesn't exceed viewport height */
 }
 
 /* Services */
@@ -197,7 +198,7 @@ h2 {
 }
 
 .hh1 {
-  font-size: 65px;
+  font-size: 50px;
   font-family: "Joan", serif;
   font-weight: 590;
   font-style: normal;
@@ -263,7 +264,7 @@ h2 {
 
 .servicecard h1 {
   text-align: center;
-  font-size: 42px;
+  font-size: 38px;
   margin-bottom: 20px;
   color: #222;
   position: relative;
@@ -341,7 +342,7 @@ h2 {
   border-radius: 50%;
   margin-right: 15px;
   width: 28px;
-  height: 28px;
+
   padding: 5px;
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
@@ -353,13 +354,7 @@ h2 {
   background-color: rgb(180, 180, 180);
 }
 .service-bar h1 {
-  font-size: 30px;
-}
-.hh1 {
-  font-size: 65px;
-  font-family: "Joan", serif;
-  font-weight: 590;
-  font-style: normal;
+  font-size: 28px;
 }
 
 /* popup */
