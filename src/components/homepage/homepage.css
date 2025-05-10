@@ -144,15 +144,11 @@ h2 {
 /* Services */
 .svcbg {
   width: 100%;
-  height: 1000px;
+  min-height: 140vh;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-}
-#sercices {
-  width: 100%;
-  height: 900px;
 }
 
 .service {
@@ -723,7 +719,7 @@ ul {
     width: 80%;
   }
   .service {
-    height: 120vh;
+    align-items: flex-start;
   }
   .itemss {
     width: 70%;
