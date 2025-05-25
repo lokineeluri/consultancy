@@ -9,7 +9,7 @@ import Hero from "./Hero";
 import JobCardCarousel from "./JobCardCarousel";
 
 import hero from "../../assets/hero.mp4";
-import backupbg from "../../assets/backup-bg.png";
+import backupbg from "../../assets/backup-bg.jpg";
 
 import "./homepage.css";
 import "./ham.css";
@@ -43,16 +43,8 @@ function Homepage() {
   return (
     <>
       <div className="hero">
-        <video
-          className="hero-bg"
-          autoPlay
-          muted
-          playsInline
-          loading="lazy"
-          poster={backupbg}
-        >
-          <source src={hero} type="video/mp4" />
-        </video>
+        <img src={backupbg} alt="" srcset="" className="hero-bg" />
+
         <div ref={(el) => (sections.current[0] = el)}>
           <Hero />
         </div>
