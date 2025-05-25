@@ -62,13 +62,11 @@ header {
 .hero {
   width: 100%;
   min-width: 350px;
-
   position: relative;
   overflow: hidden;
   margin-top: -40px;
-
-  max-height: 1000px; /* Use min-height instead of height */
-
+  min-height: 100vh; /* Changed from max-height to min-height */
+  height: auto; /* Allow natural height expansion */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,6 +75,8 @@ header {
 .sub-hero {
   background: linear-gradient(to bottom, #b0b0b0 19%, #838383 67%);
   min-width: 350px;
+  min-height: 100vh; /* Ensure minimum viewport height */
+  height: auto; /* Allow natural expansion */
 }
 
 .hero1 {
@@ -85,39 +85,49 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 115px);
-  padding-top: 115px;
+  min-height: 100vh; /* Full viewport height */
+  height: auto; /* Allow content to expand naturally */
+  padding: 8vh 2vw; /* Use viewport units for responsive padding */
+  box-sizing: border-box;
 }
 
 .hero-component {
-  margin-top: 50px;
-  width: 80%;
+  margin-top: 5vh; /* Responsive top margin */
+  width: 100%; /* More responsive width */
   max-width: 900px;
-  max-height: 600px;
-
-  padding: 5%;
+  height: auto; /* Remove fixed height */
+  min-height: 50vh; /* Minimum height based on viewport */
+  padding: 10vh 8vw; /* Responsive padding */
   background-color: rgba(232, 234, 234, 0.78);
   text-align: center;
   border-radius: 47px;
   position: relative;
   z-index: 2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-component h3,
 h2 {
   color: black;
-  font-size: 35px;
+  font-size: clamp(24px, 4vw, 35px); /* Responsive font size */
   font-family: "Julius Sans One", serif;
   font-weight: 590;
   font-style: normal;
+  margin: 1vh 0; /* Responsive margins */
 }
 
 .hero-component p {
   color: black;
-  font-size: 22px;
+  font-size: clamp(16px, 2.5vw, 22px); /* Responsive font size */
   font-family: "Joan", serif;
   font-weight: 590;
   font-style: normal;
+  margin: 1vh 0; /* Responsive margins */
+  line-height: 1.5;
 }
 
 .ppp {
@@ -136,15 +146,14 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Changed from contain to cover */
+  object-fit: cover;
   z-index: 0;
-  max-height: 1000px; /* Ensure video doesn't exceed viewport height */
 }
 
 /* Services */
 .svcbg {
   width: 100%;
-  min-height: 140vh;
+  height: 100%; /* Changed from min-height to full height */
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -152,26 +161,31 @@ h2 {
 }
 
 .service {
-  padding: 50px 0;
+  padding: 5vh 2vw; /* Responsive padding */
   width: 100%;
-  min-height: 65vh;
-  height: fit-content;
-  position: relative; /* Relative positioning for proper layering */
+  min-height: 100vh; /* Minimum viewport height */
+  height: auto; /* Allow natural expansion */
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  z-index: 1; /* Higher z-index than the video */
+  z-index: 1;
   overflow: hidden;
+  box-sizing: border-box;
 }
+
 .srvc {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 4vh; /* Responsive gap */
+  min-height: 80vh; /* Ensure minimum height */
+  height: auto;
 }
+
 .Service-left {
   text-align: center;
   width: 100%;
@@ -180,7 +194,7 @@ h2 {
   align-items: center;
   justify-content: center;
   z-index: 2;
-  margin-bottom: 20px;
+  margin-bottom: 3vh; /* Responsive margin */
   position: relative;
 }
 
@@ -196,7 +210,7 @@ h2 {
 }
 
 .hh1 {
-  font-size: 50px;
+  font-size: clamp(32px, 6vw, 50px); /* Responsive font size */
   font-family: "Joan", serif;
   font-weight: 590;
   font-style: normal;
@@ -212,24 +226,31 @@ h2 {
 .names {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: stretch; /* Changed to stretch for equal heights */
   justify-content: center;
-  gap: 4rem;
+  gap: 4vw; /* Responsive gap */
   z-index: 2;
   width: 100%;
+  min-height: 60vh; /* Minimum height for the section */
+  height: auto;
 }
 
 .itemss {
-  width: 600px;
+  width: clamp(300px, 40vw, 600px); /* Responsive width */
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+  min-height: 60vh; /* Match parent height */
 }
+
 .names:hover {
   cursor: pointer;
 }
+
 .Service-left {
-  position: relative; /* Ensure these are above the video */
-  z-index: 2; /* Ensure these are above the video */
+  position: relative;
+  z-index: 2;
   justify-content: center;
 }
 
@@ -239,21 +260,23 @@ h2 {
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  width: 550px;
+  width: clamp(300px, 40vw, 550px); /* Responsive width */
   max-width: 550px;
   min-width: 300px;
-  height: 380px;
-  min-height: 380px;
-  padding: 40px;
+  height: auto; /* Remove fixed height */
+  min-height: 60vh; /* Minimum height based on viewport */
+  padding: 5vh 4vw; /* Responsive padding */
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  margin-bottom: 30px;
+  margin-bottom: 3vh; /* Responsive margin */
   overflow: hidden;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
 }
+
 .servicecard:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
@@ -262,11 +285,11 @@ h2 {
 
 .servicecard h1 {
   text-align: center;
-  font-size: 38px;
-  margin-bottom: 20px;
+  font-size: clamp(28px, 4vw, 38px); /* Responsive font size */
+  margin-bottom: 2vh; /* Responsive margin */
   color: #222;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 1.5vh;
 }
 
 .servicecard h1::after {
@@ -282,21 +305,24 @@ h2 {
 }
 
 .servicecard p {
-  font-size: 22px;
+  font-size: clamp(16px, 2.5vw, 22px); /* Responsive font size */
   text-align: center;
   line-height: 1.6;
   color: #444;
+  flex-grow: 1; /* Allow text to take available space */
+  margin: 2vh 0; /* Responsive margin */
 }
 
 .servicecard button {
   border: none;
-  height: 50px;
+  height: 6vh; /* Responsive height */
+  min-height: 50px; /* Minimum height */
   width: 80%;
-  margin-top: 30px;
+  margin-top: 3vh; /* Responsive margin */
   border-radius: 30px;
   background: #000;
   color: white;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px); /* Responsive font size */
   font-weight: 600;
   letter-spacing: 1px;
   transition: all 0.3s ease;
@@ -312,23 +338,26 @@ h2 {
 
 .service-bar {
   z-index: 10;
-  margin: 0 20px 20px 20px;
-  width: 80%;
+  margin: 1vh 2vw 2vh 2vw; /* Responsive margins */
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-
   transition: all 0.3s ease;
-
-  padding: 10px;
+  padding: 1.5vh 2vw; /* Responsive padding */
   border-radius: 15px;
+  min-height: 8vh; /* Responsive minimum height */
+  height: auto;
+  box-sizing: border-box;
 }
+
 .service-bar:hover {
   transform: translateX(-8px);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.85);
 }
+
 .service-bar.Active {
   border-radius: 15px;
   background: #000;
@@ -336,83 +365,131 @@ h2 {
   transform: translateX(-15px);
   box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 .service-bar img {
   border-radius: 50%;
   margin-right: 15px;
   width: 28px;
-
+  height: 28px; /* Maintain aspect ratio */
   padding: 5px;
   background: rgba(255, 255, 255, 0.2);
   transition: all 0.3s ease;
 }
+
 .service-bar:hover img {
   transform: translateX(5px);
 }
+
 .service-bar.Active img {
   background-color: rgb(180, 180, 180);
 }
+
 .service-bar h1 {
-  font-size: 28px;
+  font-size: clamp(20px, 3vw, 28px); /* Responsive font size */
 }
 
-/* popup */
+/* Media Queries for fine-tuning */
+@media (max-width: 768px) {
+  .hero1 {
+    padding: 4vh 3vw;
+  }
 
-.popup {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-dialog {
-  width: 80%;
-  height: auto; /* Let the content dictate the height */
-  max-height: 80%;
-  padding: 40px;
-  border-radius: 40px;
-  border: none;
-  background-color: rgba(255, 255, 255, 0.976); /* Background color */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
-  overflow-y: auto;
-}
-dialog::backdrop {
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(5px);
-}
-.popup {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  padding: 0;
-}
+  .hero-component {
+    width: 95%;
+    padding: 4vh 3vw;
+    min-height: 50vh;
+  }
 
-.popup button {
-  height: 50px;
-  width: 300px;
-  margin-top: 20px;
-  border-radius: 30px;
-  background-color: rgb(177, 177, 177);
-  font-size: 16px; /* Font size */
-  border: none; /* Remove the border */
-  cursor: pointer; /* Pointer cursor on hover */
+  .service {
+    padding: 3vh 2vw;
+  }
+
+  .names {
+    flex-direction: column;
+    gap: 3vh;
+    align-items: center;
+  }
+
+  .servicecard {
+    width: 90%;
+    min-height: 50vh;
+    padding: 4vh 3vw;
+  }
+
+  .itemss {
+    width: 90%;
+    min-height: auto;
+  }
+
+  .service-bar {
+    min-height: 6vh;
+    margin: 1vh 0;
+  }
 }
 
-button:hover {
-  background-color: #000000;
-  color: whitesmoke; /* Button hover effect */
-}
-.popup::backdrop {
-  /* Add this to style the backdrop */
-  background-color: rgba(0, 0, 0, 0.5);
+@media (max-width: 480px) {
+  .hero1 {
+    padding: 3vh 4vw;
+  }
+
+  .hero-component {
+    width: 98%;
+    padding: 3vh 4vw;
+    min-height: 50vh;
+    border-radius: 25px;
+  }
+
+  .service {
+    padding: 2vh 2vw;
+  }
+
+  .servicecard {
+    width: 95%;
+    min-height: 45vh;
+    padding: 3vh 4vw;
+    border-radius: 15px;
+  }
+  .ppp {
+    display: block;
+  }
+  .pp {
+    display: none;
+  }
+  .service-bar {
+    min-height: 5vh;
+    padding: 1vh 3vw;
+  }
+
+  .srvc {
+    gap: 2vh;
+  }
 }
 
+/* Landscape orientation adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero1 {
+    min-height: 100vh;
+    padding: 2vh 2vw;
+  }
+
+  .hero-component {
+    min-height: 70vh;
+    padding: 2vh 3vw;
+  }
+
+  .service {
+    min-height: 100vh;
+    padding: 2vh 2vw;
+  }
+
+  .servicecard {
+    min-height: 70vh;
+  }
+
+  .srvc {
+    min-height: 90vh;
+  }
+}
 /* scroll */
 .scroll-container {
   background-color: #171717;
@@ -687,103 +764,8 @@ ul {
   color: rgb(210, 210, 210);
 }
 /* media queries */
-@media (max-width: 1600px) {
-  .Service-left {
-    gap: 0px;
-  }
-}
-@media (max-width: 1440px) {
-  .names {
-    gap: 1rem;
-  }
-}
-@media (max-width: 1400px) {
-  .Service-left {
-    flex-direction: column;
-    width: 50%;
-  }
-  .service {
-    min-height: 90vh;
-  }
-  .svrc {
-    gap: 0;
-  }
-}
-@media (max-width: 1310px) {
-  .names {
-    width: 100%;
-    flex-direction: column;
-  }
-  .servicecard {
-    max-width: none;
-    width: 80%;
-  }
-  .service {
-    align-items: flex-start;
-  }
-  .itemss {
-    width: 70%;
-  }
-  .srvc {
-    gap: 1rem;
-  }
-}
-@media (max-width: 1150px) {
-  .Service-left {
-    width: 100%;
-  }
 
-  .service {
-    flex-direction: column;
-
-    justify-content: center;
-  }
-  .names {
-    margin-top: 50px;
-    width: 95%;
-    padding: 5px;
-    margin-left: 0;
-  }
-  .srvc {
-    gap: 0;
-  }
-}
 @media (max-width: 1000px) {
-  .Service-left h1 {
-    font-size: 60px;
-  }
-  .Service-left {
-    flex-direction: column;
-
-    width: 100%;
-  }
-
-  .servicecard {
-    width: 90%;
-
-    padding: 20px;
-  }
-  .service {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .names h1 {
-    font-size: 25px;
-  }
-  .servicecard h1 {
-    font-size: 38px;
-  }
-  .servicecard p {
-    font-size: 24px;
-  }
-}
-@media (max-width: 1000px) {
-  .hero-component {
-    width: 690px;
-    height: 460px;
-  }
-
   footer {
     height: 500px;
   }
@@ -803,35 +785,12 @@ ul {
 }
 
 @media (max-width: 700px) {
-  .hero-component {
-    width: 80%;
-    padding: 5%;
-    padding-top: 50px;
-    height: 480px;
-    border-radius: 25px;
-    margin: 5px;
+  .choose {
+    flex-direction: column;
   }
-  .hero-component h3,
-  h2 {
-    font-size: 36px;
+  .chooseelems {
+    flex-direction: column;
   }
-  .hero-component p {
-    font-size: 24px;
-  }
-  .pp {
-    display: none;
-  }
-  .ppp {
-    display: block;
-  }
-
-  .servicecard h1 {
-    font-size: 32px;
-  }
-  .servicecard p {
-    font-size: 20px;
-  }
-
   footer h1 {
     font-size: 28x;
   }
@@ -844,38 +803,7 @@ ul {
   .nav-bar {
     border-radius: 30px;
   }
-  .hero {
-    height: 90vh;
-  }
-  .hero-component {
-    width: 100%;
-    height: 500px;
-  }
-  .hero-component h3,
-  h2 {
-    font-size: 35px;
-  }
-  .hero-component p {
-    font-size: 22px;
-  }
-  .itemss {
-    width: 100%;
-  }
 
-  .names h1 {
-    font-size: 20px;
-  }
-
-  .servicecard h1 {
-    font-size: 36px;
-  }
-  .servicecard p {
-    font-size: 22px;
-  }
-
-  .chooseelems {
-    flex-direction: column;
-  }
   footer {
     height: 650px;
   }
@@ -898,52 +826,5 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-}
-
-@media (max-width: 490px) {
-  .service {
-    height: 100vh;
-  }
-  .Service-left {
-    width: 100%;
-  }
-  .Service-left h1 {
-    font-size: 43px;
-  }
-  .names h1 {
-    font-size: 18px;
-  }
-  .service-bar {
-    width: 100%;
-    margin: 0px;
-  }
-
-  .servicecard h1 {
-    font-size: 32px;
-  }
-  .servicecard p {
-    font-size: 20px;
-  }
-  .servicecard button {
-    width: 150px;
-  }
-  .hero-component {
-    height: 490px;
-    padding: 50px 30px;
-  }
-  .hero-component h3,
-  h2 {
-    font-size: 35px;
-  }
-  .hero-component p {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 400px) {
-  .hero-component {
-    height: 500px;
-    margin: 50px 0;
   }
 }
