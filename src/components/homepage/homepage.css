@@ -932,6 +932,9 @@ ul {
   }
 }
 @media (max-width: 1000px) {
+  .hero-component {
+    margin-top: 8vh;
+  }
   footer {
     height: 500px;
   }
