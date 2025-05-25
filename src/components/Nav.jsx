@@ -25,7 +25,7 @@ function Nav() {
         opacity: 1,
         duration: 0.8,
         ease: "power3.out",
-        stagger: 0.2, // Each element animates with a delay
+        stagger: 0.48, // Each element animates with a delay
       }
     );
   }, []);

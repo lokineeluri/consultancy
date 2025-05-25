@@ -154,7 +154,7 @@ h2 {
 .service {
   padding: 50px 0;
   width: 100%;
-  min-height: 35vh;
+  min-height: 65vh;
   height: fit-content;
   position: relative; /* Relative positioning for proper layering */
   display: flex;
@@ -735,7 +735,7 @@ ul {
 
   .service {
     flex-direction: column;
-    padding: 0px 0;
+
     justify-content: center;
   }
   .names {
@@ -780,8 +780,8 @@ ul {
 }
 @media (max-width: 1000px) {
   .hero-component {
-    width: 600px;
-    height: 560px;
+    width: 690px;
+    height: 460px;
   }
 
   footer {
@@ -804,18 +804,19 @@ ul {
 
 @media (max-width: 700px) {
   .hero-component {
-    width: 90%;
+    width: 80%;
     padding: 5%;
-    height: 560px;
+    padding-top: 50px;
+    height: 480px;
     border-radius: 25px;
     margin: 5px;
   }
   .hero-component h3,
   h2 {
-    font-size: 40px;
+    font-size: 36px;
   }
   .hero-component p {
-    font-size: 25px;
+    font-size: 24px;
   }
   .pp {
     display: none;
@@ -848,15 +849,14 @@ ul {
   }
   .hero-component {
     width: 100%;
-    height: 520px;
-    padding: 50px 30px;
+    height: 500px;
   }
   .hero-component h3,
   h2 {
-    font-size: 37px;
+    font-size: 35px;
   }
   .hero-component p {
-    font-size: 23px;
+    font-size: 22px;
   }
   .itemss {
     width: 100%;
@@ -882,7 +882,7 @@ ul {
   footer .logo {
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin-left: 100px;
   }
 
   footer h1 {
@@ -902,9 +902,6 @@ ul {
 }
 
 @media (max-width: 490px) {
-  .hero-component p {
-    font-size: 22px;
-  }
   .service {
     height: 100vh;
   }
@@ -932,7 +929,7 @@ ul {
     width: 150px;
   }
   .hero-component {
-    height: 530px;
+    height: 490px;
     padding: 50px 30px;
   }
   .hero-component h3,
@@ -946,6 +943,7 @@ ul {
 
 @media (max-width: 400px) {
   .hero-component {
-    height: 560px;
+    height: 500px;
+    margin: 50px 0;
   }
 }
