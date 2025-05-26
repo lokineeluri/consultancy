@@ -38,12 +38,12 @@ button {
   width: 70px;
 }
 .logo {
-  width: 80%;
+  width: 90%;
 }
 .tittle {
   font-family: "Joan", serif;
   font-weight: 500;
   font-style: normal;
   font-size: 26px;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
