@@ -63,7 +63,7 @@
 .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
   align-items: stretch;
 }
 

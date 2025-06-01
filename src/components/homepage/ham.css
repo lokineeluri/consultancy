@@ -40,6 +40,9 @@
 
 /* Show Hamburger on Mobile */
 @media screen and (max-width: 1390px) {
+  .nav-bar {
+    background: none;
+  }
   .hamburger {
     display: flex;
   }
