@@ -4,6 +4,7 @@ import Homepage from "./components/homepage/Homepage";
 import About from "./components/about/About";
 import Contact from "./components/contact";
 import Careers from "./components/careers/Careers";
+import TrainingComponent from "./components/TrainingComponent/TrainingComponent";
 import "./components/homepage/homepage.css";
 import { ToastContainer } from "react-toastify";
 
@@ -20,6 +21,7 @@ function App() {
 
         <Route path="/about" element={<About />}></Route>
         <Route path="/careers" element={<Careers />}></Route>
+        <Route path="/Trainings" element={<TrainingComponent />}></Route>
       </Routes>
       <Contact></Contact>
       <Footer></Footer>

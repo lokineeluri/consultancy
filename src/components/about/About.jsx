@@ -1,55 +1,96 @@
-import "./about.css";
-import abt from "../../assets/about.mp4";
-import backupbg from "../../assets/about_backup.png";
+import { useState, useEffect, useRef } from "react";
+import "./About.css";
 
-function Hero() {
+import AboutMission from "./AboutMission";
+import AboutServices from "./AboutServices";
+import AboutTeam from "./AboutTeam";
+import AboutTestimonials from "./AboutTestimonials";
+import AboutContact from "../Contact/Contact";
+
+const About = () => {
+  const [isVisible, setIsVisible] = useState({});
+  const sectionsRef = useRef([]);
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    };
+
+    const handleIntersect = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setIsVisible((prev) => ({
+            ...prev,
+            [entry.target.id]: true,
+          }));
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+
+    sectionsRef.current.forEach((section) => {
+      if (section) observer.observe(section);
+    });
+
+    return () => {
+      sectionsRef.current.forEach((section) => {
+        if (section) observer.unobserve(section);
+      });
+    };
+  }, []);
+
+  const addToRefs = (el) => {
+    if (el && !sectionsRef.current.includes(el)) {
+      sectionsRef.current.push(el);
+    }
+  };
+
   return (
-    <div className="about_hero">
-      <h1>Connecting Talent With The Opportunity</h1>
-      <h2>
-        JobConnect has been bridging the gap between exceptional talent and
-        leading companies, creating meaningful career connections that drive
-        success.
-      </h2>
+    <div className="about-container">
+      <section
+        id="mission-section"
+        ref={addToRefs}
+        className={`about-section ${
+          isVisible["mission-section"] ? "visible" : ""
+        }`}
+      >
+        <AboutMission />
+      </section>
+
+      <section
+        id="services-section"
+        ref={addToRefs}
+        className={`about-section ${
+          isVisible["services-section"] ? "visible" : ""
+        }`}
+      >
+        <AboutServices />
+      </section>
+
+      <section
+        id="team-section"
+        ref={addToRefs}
+        className={`about-section ${
+          isVisible["team-section"] ? "visible" : ""
+        }`}
+      >
+        <AboutTeam />
+      </section>
+
+      <section
+        id="contact-section"
+        ref={addToRefs}
+        className={`about-section ${
+          isVisible["contact-section"] ? "visible" : ""
+        }`}
+      >
+        <AboutContact />
+      </section>
     </div>
   );
-}
-function Subhero() {
-  return (
-    <div className="abt_subhero">
-      <h1>Our Story</h1>
-      <p>
-        JobConnect was founded with a simple yet powerful vision: to
-        revolutionize how companies and talent connect. What started as a small
-        team of passionate recruiters has grown into a leading platform that
-        helps thousands of professionals find their dream careers and enables
-        businesses to build strong teams. Today, we're proud to be trusted by
-        over 10,000 companies and have helped more than 100,000 professionals
-        advance their careers. Our success is measured by the success stories we
-        create every day.
-      </p>
-    </div>
-  );
-}
-function About() {
-  return (
-    <>
-      <div className="about_container">
-        <video
-          className="hero-bg"
-          autoPlay
-          muted
-          playsInline
-          loading="lazy"
-          poster={backupbg}
-        >
-          <source src={abt} type="video/mp4" />
-        </video>
-        <Hero></Hero>
-        <Subhero></Subhero>
-      </div>
-    </>
-  );
-}
+};
 
 export default About;

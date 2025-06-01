@@ -1,0 +1,245 @@
+.training-details {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: #000000;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 16px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+.back-icon {
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.training-details-content {
+  padding: 0 24px 32px;
+}
+
+.training-details-header {
+  display: flex;
+  margin-bottom: 32px;
+  gap: 32px;
+}
+
+.training-details-image-container {
+  flex: 0 0 300px;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.training-details-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.training-details-image:hover {
+  transform: scale(1.05);
+}
+
+.details-popular-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: #f97316;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.training-details-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.training-details-category {
+  display: inline-block;
+  width: fit-content;
+  background-color: #e5e7eb;
+  color: #4b5563;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.training-details-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.training-details-meta {
+  display: flex;
+  gap: 24px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-icon {
+  font-size: 1.2rem;
+}
+
+.meta-label {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.meta-value {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.details-section-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.training-details-description {
+  margin-bottom: 32px;
+}
+
+.training-details-description p {
+  line-height: 1.6;
+  color: #4b5563;
+  font-size: 1rem;
+}
+
+.training-details-curriculum {
+  margin-bottom: 32px;
+}
+
+.curriculum-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.curriculum-list li {
+  padding: 12px 16px;
+  border-left: 3px solid #000000;
+  background-color: #f8fafc;
+  margin-bottom: 8px;
+  border-radius: 0 8px 8px 0;
+  color: #4b5563;
+  transition: all 0.2s ease;
+}
+
+.curriculum-list li:hover {
+  background-color: #eff6ff;
+  transform: translateX(4px);
+}
+
+.training-details-cta {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.enroll-button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.enroll-button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.download-button {
+  background-color: transparent;
+  border: 2px solid #2563eb;
+  color: #2563eb;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.download-button:hover {
+  background-color: rgba(37, 99, 235, 0.05);
+}
+
+@media (max-width: 768px) {
+  .training-details-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .training-details-image-container {
+    flex: none;
+    width: 100%;
+  }
+
+  .training-details-title {
+    font-size: 1.6rem;
+  }
+
+  .training-details-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .training-details-cta {
+    flex-direction: column;
+  }
+}

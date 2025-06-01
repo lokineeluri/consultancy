@@ -126,6 +126,8 @@ function Nav() {
       setActiveNav("services");
     } else if (location.pathname === "/careers") {
       setActiveNav("careers");
+    } else if (location.pathname === "/Trainings") {
+      setActiveNav("Trainings");
     }
   }, [location.pathname, location.hash]);
 
@@ -190,7 +192,7 @@ function Nav() {
                 onClick={handleServiceClick}
                 className={activeNav === "services" ? "active" : ""}
               >
-                Services
+                Dev Technologies
               </a>
             </li>
             <li ref={(el) => (navItemsRef.current[3] = el)}>
@@ -199,6 +201,14 @@ function Nav() {
                 className={activeNav === "careers" ? "active" : ""}
               >
                 Careers
+              </Link>
+            </li>
+            <li ref={(el) => (navItemsRef.current[4] = el)}>
+              <Link
+                to="/Trainings"
+                className={activeNav === "Trainings" ? "active" : ""}
+              >
+                Trainings
               </Link>
             </li>
           </ul>

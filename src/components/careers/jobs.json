@@ -1,461 +1,61 @@
-[
-  {
-    "id": 1,
-    "title": "Senior Frontend Developer",
-    "company": "Tech Solutions Inc.",
-    "timePosted": "2 days ago",
-    "experience": "5+ years",
-    "salary": "$120k - $150k",
-    "location": "New York, NY",
-    "skills": ["React", "JavaScript", "HTML/CSS", "Redux", "REST APIs"],
-    "description": "We are looking for an experienced Frontend Developer to join our team...",
-    "eligibility": [
-      "Bachelor's degree in Computer Science or related field",
-      "5+ years of experience with modern JavaScript frameworks",
-      "Strong understanding of web fundamentals",
-      "Experience with responsive design and cross-browser compatibility"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  },
-  {
-    "id": 2,
-    "title": "Full Stack Developer",
-    "company": "Digital Innovations",
-    "timePosted": "1 week ago",
-    "experience": "3+ years",
-    "salary": "$90k - $120k",
-    "location": "Remote",
-    "skills": ["Node.js", "React", "MongoDB", "Express", "AWS"],
-    "description": "Join our dynamic team as a Full Stack Developer...",
-    "eligibility": [
-      "Strong proficiency in JavaScript/Node.js",
-      "Experience with modern frontend frameworks",
-      "Knowledge of database design and ORM",
-      "Understanding of cloud services (AWS/GCP)"
-    ]
-  }
-]
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Senior Software Engineer",
+      "company": "TechCorp Solutions",
+      "department": "Development",
+      "experience": "5+ years",
+      "salary": "$120k - $150k",
+      "location": "New York, NY",
+      "timePosted": "2 days ago",
+      "featured": true,
+      "skills": ["React", "Node.js", "AWS", "TypeScript", "MongoDB"],
+      "description": "We are looking for a Senior Software Engineer to join our growing team...",
+      "eligibility": [
+        "Bachelor's degree in Computer Science or related field",
+        "5+ years of experience in full-stack development",
+        "Strong knowledge of React and Node.js",
+        "Experience with cloud platforms (AWS preferred)"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Product Manager",
+      "company": "InnovateTech",
+      "department": "Product",
+      "experience": "3-5 years",
+      "salary": "$100k - $130k",
+      "location": "San Francisco, CA",
+      "timePosted": "1 week ago",
+      "featured": false,
+      "skills": ["Product Strategy", "Agile", "User Research", "Data Analysis"],
+      "description": "Join our product team to drive innovation and user experience...",
+      "eligibility": [
+        "Bachelor's degree required",
+        "3+ years of product management experience",
+        "Strong analytical and communication skills",
+        "Experience with Agile methodologies"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "DevOps Engineer",
+      "company": "CloudScale Systems",
+      "department": "Operations",
+      "experience": "4+ years",
+      "salary": "$110k - $140k",
+      "location": "Remote",
+      "timePosted": "3 days ago",
+      "featured": true,
+      "skills": ["Docker", "Kubernetes", "CI/CD", "AWS", "Terraform"],
+      "description": "Looking for an experienced DevOps engineer to strengthen our infrastructure team...",
+      "eligibility": [
+        "Strong background in DevOps practices",
+        "Experience with container orchestration",
+        "Knowledge of infrastructure as code",
+        "Cloud platform expertise"
+      ]
+    }
+  ]
+}

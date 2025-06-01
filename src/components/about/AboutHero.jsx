@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
-import "./AboutHero.css";
 
-const Hero = () => {
+const AboutHero = () => {
   const parallaxRef = useRef(null);
 
   useEffect(() => {
@@ -21,45 +20,23 @@ const Hero = () => {
     };
   }, []);
 
-  const handleContactClick = (e) => {
-    e.preventDefault();
-    const contactSection = document.getElementById("contact-section");
-    if (contactSection) {
-      contactSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
-  const handleServicesClick = (e) => {
-    e.preventDefault();
-    const servicesSection = document.getElementById("services");
-    if (servicesSection) {
-      servicesSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-  };
-
   return (
     <div className="hero-container">
       <div className="hero-overlay"></div>
       <div className="hero-parallax" ref={parallaxRef}></div>
       <div className="hero-content">
-        <h1 className="hero-title">Digital Transformation providers </h1>
+        <h1 className="hero-title">Content Staffing Solutions</h1>
         <p className="hero-subtitle">
-          Unlock the Future of Your Business problems quickly and
-          cost-effectively.
+          Your trusted partner in connecting exceptional talent with innovative
+          organizations
         </p>
         <div className="hero-buttons">
-          <button onClick={handleServicesClick} className="btn btn-primary">
+          <a href="#services-section" className="btn btn-primary">
             Our Services
-          </button>
-          <button onClick={handleContactClick} className="btn btn-outline">
+          </a>
+          <a href="#contact-section" className="btn btn-outline">
             Contact Us
-          </button>
+          </a>
         </div>
       </div>
       <div className="hero-scroll-indicator">
@@ -70,4 +47,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AboutHero;

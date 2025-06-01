@@ -8,8 +8,7 @@ import Choose from "./Choose";
 import Hero from "./Hero";
 import JobCardCarousel from "./JobCardCarousel";
 
-import hero from "../../assets/hero.mp4";
-import backupbg from "../../assets/backup-bg.jpg";
+import AboutContact from "../Contact/Contact";
 
 import "./homepage.css";
 import "./ham.css";
@@ -31,7 +30,7 @@ function Homepage() {
           ease: "power3.out",
           scrollTrigger: {
             trigger: section,
-            start: "top 85%", // Start animation when section enters viewport
+            start: "top 95%", // Start animation when section enters viewport
             end: "bottom 60%",
             toggleActions: "play none none none",
           },
@@ -43,11 +42,7 @@ function Homepage() {
   return (
     <>
       <div className="hero">
-        <img src={backupbg} alt="" srcset="" className="hero-bg" />
-
-        <div ref={(el) => (sections.current[0] = el)}>
-          <Hero />
-        </div>
+        <Hero />
       </div>
 
       <div className="sub-hero">
@@ -62,9 +57,11 @@ function Homepage() {
         <div ref={(el) => (sections.current[3] = el)}>
           <Choose />
         </div>
-
         <div ref={(el) => (sections.current[4] = el)}>
           <JobCardCarousel />
+        </div>
+        <div id="contact-section" ref={(el) => (sections.current[5] = el)}>
+          <AboutContact />
         </div>
       </div>
     </>

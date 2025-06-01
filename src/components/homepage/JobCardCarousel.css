@@ -1,6 +1,6 @@
 .homepage-jobs-section {
   margin-top: 150px;
-  
+
   padding: 1rem 0.5rem;
 
   background: linear-gradient(to top, #030303 0%, #161616 18%, #696969 100%);
@@ -25,4 +25,103 @@
 
 .jobs-scroll-container::-webkit-scrollbar {
   display: none; /* Hide scrollbar for Chrome, Safari, Edge */
+}
+
+/* JobCardCarousel.css */
+
+.homepage-jobs-section {
+  padding: 2rem 0;
+  overflow: hidden;
+}
+
+.homepage-jobs-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.jobs-scroll-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 1rem 0;
+  scroll-behavior: auto; /* Disable smooth scroll for better control */
+
+  /* Hide scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  /* Optimize for smooth scrolling */
+  will-change: scroll-position;
+  transform: translateZ(0); /* Enable hardware acceleration */
+
+  /* Prevent momentum scrolling on iOS */
+  -webkit-overflow-scrolling: touch;
+}
+
+.jobs-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.jobs-scroll-container.dragging {
+  scroll-behavior: auto;
+}
+
+/* Optimize job card containers */
+.jobs-scroll-container > * {
+  flex-shrink: 0;
+  will-change: transform;
+}
+
+/* Smooth transitions when not dragging */
+.jobs-scroll-container:not(.dragging) {
+  transition: none; /* Remove any transitions that might interfere */
+}
+
+/* Ensure links don't interfere with dragging */
+.jobs-scroll-container a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+/* Prevent image dragging within job cards */
+.jobs-scroll-container img {
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+/* Job card specific styles for carousel */
+.jobs-scroll-container .job-card {
+  max-width: 90px; /* Ensure consistent card width */
+  height: auto;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.jobs-scroll-container .job-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .jobs-scroll-container {
+    gap: 1rem;
+    padding: 0.5rem 0;
+  }
+
+  .jobs-scroll-container .job-card {
+    min-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobs-scroll-container .job-card {
+    min-width: 260px;
+  }
 }

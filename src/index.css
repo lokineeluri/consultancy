@@ -47,3 +47,149 @@ button {
   font-size: 26px;
   color: rgb(255, 255, 255);
 }
+/* Typography */
+.main-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.main-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.hiring-section {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hiring-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.typed-role {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Button Styles */
+.get-started-btn {
+  padding: 15px 35px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 20px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background: #000000;
+  color: #fff;
+}
+.get-started-btn:hover {
+  background-color: #363636; /* Lighter blue on hover */
+  transform: scale(1.05);
+}
+
+.apply-now-btn {
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 2px solid;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px 5px;
+  text-transform: capitalize;
+
+  color: #000000;
+  background-color: transparent;
+}
+.apply-now-btn:hover {
+  background-color: #363636; /* Lighter blue on hover */
+  transform: scale(1.05);
+  color: #ffffff;
+  border: #000;
+}
+
+/* WHITE THEME */
+.hero1.white-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.hero1.white-theme .hiring-section {
+  border-top-color: rgba(0, 0, 0, 0.1);
+}
+
+.hero1.white-theme .get-started-btn {
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero1.white-theme .get-started-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero1.white-theme .apply-now-btn {
+  color: #000;
+  border-color: #000;
+}
+
+.hero1.white-theme .apply-now-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.hero1.white-theme .typed-role {
+  color: #333;
+}
+
+/* BLACK THEME */
+.hero1.black-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.hero1.black-theme .hiring-section {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero1.black-theme .get-started-btn {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+.hero1.black-theme .get-started-btn:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.hero1.black-theme .apply-now-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.hero1.black-theme .apply-now-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: translateY(-1px);
+}
+
+.hero1.black-theme .typed-role {
+  color: #fff;
+}
